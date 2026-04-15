@@ -3,19 +3,39 @@
     {
       "listen": "0.0.0.0",
       "port": 8080,
+      "protocol": "vless",
+      "tag": "vless-hu",
+      "settings": {
+        "clients": [
+          {
+            "id": "b7d2c1f4-9a3e-4c88-8d61-2f6a91c5d8e4"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "httpupgrade",
+        "httpupgradeSettings": {
+          "path": "/MrValdez/Vless-hu"
+        }
+      }
+    },
+    {
+      "listen": "0.0.0.0",
+      "port": 8080,
       "protocol": "trojan",
       "tag": "trojan-hu",
       "settings": {
         "clients": [
           {
-            "password": "MrValdez777"
+            "password": "MrValdez"
           }
         ]
       },
       "streamSettings": {
         "network": "httpupgrade",
         "httpupgradeSettings": {
-          "path": "/MrValdez"
+          "path": "/MrValdez/Trojan-hu"
         }
       }
     },
@@ -26,13 +46,13 @@
       "tag": "ss-hu",
       "settings": {
         "method": "aes-256-gcm",
-        "password": "MrValdez888",
+        "password": "MrValdez123",
         "network": "tcp,udp"
       },
       "streamSettings": {
         "network": "httpupgrade",
         "httpupgradeSettings": {
-          "path": "/MrValdez"
+          "path": "/MrValdez/Shadowsocks-hu"
         }
       }
     }
