@@ -1,19 +1,37 @@
 {
   "inbounds": [
     {
+      "listen": "0.0.0.0",
       "port": 8080,
-      "protocol": "vless",
+      "protocol": "trojan",
+      "tag": "trojan-hu",
       "settings": {
         "clients": [
           {
-            "id": "69c3a7f2-6b14-4f8c-9d2a-5e8c1b7a4f90"
+            "password": "MrValdez777"
           }
-        ],
-        "decryption": "none"
+        ]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
+        "network": "httpupgrade",
+        "httpupgradeSettings": {
+          "path": "/MrValdez"
+        }
+      }
+    },
+    {
+      "listen": "0.0.0.0",
+      "port": 8080,
+      "protocol": "shadowsocks",
+      "tag": "ss-hu",
+      "settings": {
+        "method": "aes-256-gcm",
+        "password": "MrValdez888",
+        "network": "tcp,udp"
+      },
+      "streamSettings": {
+        "network": "httpupgrade",
+        "httpupgradeSettings": {
           "path": "/MrValdez"
         }
       }
