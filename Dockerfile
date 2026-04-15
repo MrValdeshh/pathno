@@ -1,6 +1,4 @@
-FROM ajndjd2/ahmed-vip1
-
-WORKDIR /etc/xray
+FROM gojolvl99/gojo-v2-core:latest
 
 COPY config.json /etc/xray/config.json
 
